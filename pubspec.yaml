@@ -1,0 +1,35 @@
+name: dogs_breed_classifier
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.0.7
+  tflite_flutter: 0.11.0  # ใช้เวอร์ชันที่เข้ากันกับ tflite_flutter_helper
+  url_launcher: ^6.2.5
+  path_provider: ^2.1.2
+  permission_handler: ^11.3.1
+  device_info_plus: 11.3.3
+  image: 3.3.0  # ปรับเป็นเวอร์ชันที่เข้ากันได้กับ tflite_flutter_helper
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/model.tflite
+    - assets/labels.txt
+    - assets/BG.JPG
+    - assets/dog_icon.png
